@@ -30,7 +30,7 @@ class App extends Component {
     let numSongs = this.state.turns * 4
     let decadeQuery = decadeArray.join("&")
     console.log(decadeQuery)
-    fetch(`http://localhost:3000/songs?${decadeQuery}&numSongs=${numSongs}`)
+    fetch(`http://localhost:9393/songs?${decadeQuery}&numSongs=${numSongs}`)
       .then(res => res.json())
       .then((songsArray) => {
         // console.log(songsArray)
@@ -56,7 +56,7 @@ class App extends Component {
     // })
     // let userQuery = userArray.join("&")
     this.state.players.map(player => {
-      fetch(`http://localhost:3000/users/${player.id}`, {
+      fetch(`http://localhost:9393/users/${player.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json"
@@ -95,7 +95,7 @@ class App extends Component {
 
   createUserGames = () => {
     this.state.players.map(player => {
-      fetch("http://localhost:3000/user_games", {
+      fetch("http://localhost:9393/user_games", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -116,7 +116,7 @@ class App extends Component {
     let userExists = this.state.players.find(player => player.username === userObj.username)
     if (userExists === undefined) {
       let searchedObj = {}
-      fetch(`http://localhost:3000/users?username=${userObj.username}&password=${userObj.password}`)
+      fetch(`http://localhost:9393/users?username=${userObj.username}&password=${userObj.password}`)
         .then(res => res.json())
         .then(searchedUserObj => {
           searchedObj = searchedUserObj
@@ -143,12 +143,12 @@ class App extends Component {
     // add check if user exists
     if (userObj.username.length > 0) {
       let searchedObj = {}
-      fetch(`http://localhost:3000/check_user?username=${userObj.username}`)
+      fetch(`http://localhost:9393/check_user?username=${userObj.username}`)
         .then(res => res.json())
         .then(searchedUserObj => {
           searchedObj = searchedUserObj
           if (searchedObj.message === "User does not exist") {
-            fetch("http://localhost:3000/users", {
+            fetch("http://localhost:9393/users", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json"
@@ -177,7 +177,7 @@ class App extends Component {
     // change to PlayersContainer via Route
 
     // instantiate new Game instance in backend (fetch?)
-    fetch("http://localhost:3000/games", {
+    fetch("http://localhost:9393/games", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -6,11 +6,11 @@ export default class HomePageContainer extends Component {
         return (
             <div className="container-div">
                 <div className="inner-div" >
-                    <h1>Hummingbird</h1>
+                    <h1>HummingEffect</h1>
                     <br />
                     <button onClick={() => {
                         this.props.history.push("/playersetup")
-                    }}>Start a New Game</button>
+                    }} className="start-btn">Start a New Game</button>
                     <img id="hummingbird-img" src={HummingbirdPhoto}></img>
                 </div>
             </div>
