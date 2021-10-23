@@ -29,7 +29,7 @@ export default class TurnForm extends Component {
                         <input onChange={(event) => { this.setState({ numTurns: parseInt(event.target.value, 10) }) }} type="text" name="numTurns" value={this.state.numTurns} />
                     </label>
                     <br />
-                    <input type="submit" value="Start Game" />
+                    <input type="submit" value="Start Game" className="start-game-input" />
                 </form>
             </div >
         )

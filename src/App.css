@@ -5,6 +5,13 @@ body {
     
 }
 
+button:hover,
+.start-game-input:hover{
+    cursor:pointer;
+    background-color:#33ccc7;
+}
+
+
 .container-div {
     margin: 0 auto;
     height: 100vh;
@@ -116,9 +123,9 @@ button.button-clicked {
     margin: 10px;
  }
 
-button:active{
+/* button:active{
     background-color:#33ccc7;
- }
+ } */
 
 
 input[type=submit]{
