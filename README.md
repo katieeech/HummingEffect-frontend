@@ -1,6 +1,6 @@
 <br>
 
-# 🎙️ HummingEffect (front-end)
+# 🎙️ HummingEffect (Front-end)
 
 ![MainLogo](https://user-images.githubusercontent.com/33072677/138638571-b35e6f68-c3c0-4a10-a9ca-72c6498da6c5.jpg)
 
@@ -22,11 +22,11 @@ HummingEffect is a fun guessing game app for hummed songs. This game app lets pl
 <br>
 
 
-## Technology - Libraries/Middleware
+## Technology (Front-end)
 
 - [React](https://github.com/facebook/react)
 - [React Router](https://github.com/ReactTraining/react-router)
-- [Ruby](https://github.com/ruby/ruby) (Rake gem)
+
 
 
 <br>
