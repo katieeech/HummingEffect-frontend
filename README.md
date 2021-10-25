@@ -1,6 +1,6 @@
 <br>
 
-# 🎙️ HummingEffect 
+# 🎙️ HummingEffect (front-end)
 
 ![MainLogo](https://user-images.githubusercontent.com/33072677/138638571-b35e6f68-c3c0-4a10-a9ca-72c6498da6c5.jpg)
 
